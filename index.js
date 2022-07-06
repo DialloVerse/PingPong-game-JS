@@ -6,7 +6,7 @@ const gameWidth = gameBoard.width;
 const gameHeight = gameBoard.height;
 const boardBackground = "forestgreen";
 
-const paddleColor = "lightblue";
+const paddle1Color = "lightblue";
 const paddle2Color = "red";
 const paddleBorder = "black";
 const ballColor = "yellow";
@@ -45,10 +45,11 @@ function gameStart() {}
 function nextTick() {}
 function clearBoard() {}
 function drawPaddles() {
-  ctx.strokeStyle = paddle1Border;
+  ctx.strokeStyle = paddleBorder;
 
   ctx.fillStyle = paddle1Color;
   ctx.fillRect(paddle1.x, paddle1.y, paddle1.width, paddle1.height);
+  ctx.strokeRect(paddle1.x, paddle1.y, paddle1.width, paddle1.height);
 }
 function createBall() {}
 function moveBall() {}
